@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     background-color: #F4F1FB; 
+}
+
+header .navbar {
+    background-color: #c47ef6 !important;
+    padding: 1rem 1rem;
+}
+
+.nav-link.nav-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #333;
+}
+
+.nav-link.nav-btn i {
+    color: #000000;
+}
+
+.nav-link.nav-btn:hover {
+    background-color: #ffffff;
+    color: #000000 !important;
+}
+
+main {
+    flex: 1;
+    padding-top: 3rem; 
+    padding-bottom: 1rem; 
+}
+
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #000000;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #555;
+}
+
+.bg-light-green {
+    background-color: #e0f7e9;
+}
+
+.btn-hover:hover {
+    background-color: #13ef43;
+    border-color: #1e7e34;
+    color: #fff;
+}
+
+.img-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom: none;
+}
+
+.card-header img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-footer {
+    background-color: #fff;
+    border-top: none;
+    padding: 1rem;
+}
+
+.card-footer a {
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        text-align: center;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+        color: black;
+    }
+
+    main {
+        padding-top: 1rem; 
+        padding-bottom: 1rem; 
+    }
+}

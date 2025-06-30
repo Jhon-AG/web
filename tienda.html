@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Ropa con estilo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="css/style-store.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="image/logo.png" alt="Logo" style="width: 100px; height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link nav-btn" href="index.html" style="color: black;"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link nav-btn" href="nosotros.html" style="color: black;"><i class="fas fa-address-card"></i> Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link nav-btn" href="tienda.html" style="color: black;"><i class="fas fa-shopping-bag"></i> Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link nav-btn" href="equipo.html" style="color: black;"><i class="fas fa-users-cog"></i> Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link nav-btn" href="contacto.html" style="color: black;"><i class="fas fa-phone-alt"></i> Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="container my-5 tienda">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pantalones-tab" data-toggle="tab" href="#pantalones" role="tab" aria-controls="pantalones" aria-selected="true">Pantalones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="camisas-tab" data-toggle="tab" href="#camisas" role="tab" aria-controls="camisas" aria-selected="false">Camisas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="faldas-tab" data-toggle="tab" href="#faldas" role="tab" aria-controls="faldas" aria-selected="false">Vestidos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="sacos-tab" data-toggle="tab" href="#sacos" role="tab" aria-controls="sacos" aria-selected="false">Chompas</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="pantalones" role="tabpanel" aria-labelledby="pantalones-tab">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/pantalon-1.jpg" class="card-img-top producto-img" alt="Pantalón 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pantalón 1</h5>
+                                <p class="card-text">S/ 29.99</p>
+                                <p class="card-text">4.8 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Pantalón 1" data-price="29.99" data-image="/image/pantalon-1.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repetir para más productos -->
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/pantalon-2.webp" class="card-img-top producto-img" alt="Pantalón 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pantalón 2</h5>
+                                <p class="card-text">S/ 35.99</p>
+                                <p class="card-text">4.5 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Pantalón 2" data-price="35.99" data-image="/image/pantalon-2.webp">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/pantalon-3.png" class="card-img-top producto-img" alt="Pantalón 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pantalón 3</h5>
+                                <p class="card-text">S/ 42.99</p>
+                                <p class="card-text">4.7 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Pantalón 3" data-price="42.99" data-image="/image/pantalon-3.png">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/pantalon-4.jpg" class="card-img-top producto-img" alt="Pantalón 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pantalón 4</h5>
+                                <p class="card-text">S/ 25.99</p>
+                                <p class="card-text">4.6 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Pantalón 4" data-price="25.99" data-image="/image/pantalon-4.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="camisas" role="tabpanel" aria-labelledby="camisas-tab">
+                <!-- Productos de camisas -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/camisa-1.jpg" class="card-img-top producto-img" alt="Camisa 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camisa 1</h5>
+                                <p class="card-text">S/ 48.99</p>
+                                <p class="card-text">5.0 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Camisa 1" data-price="48.99" data-image="/image/camisa-1.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/camisa-2.jpg" class="card-img-top producto-img" alt="Camisa 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camisa 2</h5>
+                                <p class="card-text">S/ 39.00</p>
+                                <p class="card-text">4.9 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Camisa 2" data-price="39.00" data-image="/image/camisa-2.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/camisa-3.jpg" class="card-img-top producto-img" alt="Camisa 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camisa 3</h5>
+                                <p class="card-text">S/ 42.99</p>
+                                <p class="card-text">4.8 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Camisa 3" data-price="42.99" data-image="/image/camisa-3.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/camisa-4.jpg" class="card-img-top producto-img" alt="Camisa 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camisa 4</h5>
+                                <p class="card-text">S/ 32.99</p>
+                                <p class="card-text">4.7 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Camisa 4" data-price="32.99" data-image="/image/camisa-4.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="faldas" role="tabpanel" aria-labelledby="faldas-tab">
+                <!-- Productos de faldas -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/falda-1.webp" class="card-img-top producto-img" alt="Falda 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Falda 1</h5>
+                                <p class="card-text">S/ 25.99</p>
+                                <p class="card-text">4.6 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Falda 1" data-price="25.99" data-image="/image/falda-1.webp">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repetir para más productos -->
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/falda-2.jpg" class="card-img-top producto-img" alt="Falda 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Falda 2</h5>
+                                <p class="card-text">S/ 27.99</p>
+                                <p class="card-text">4.5 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Falda 2" data-price="27.99" data-image="/image/falda-2.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/falda-3.jpg" class="card-img-top producto-img" alt="Falda 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Falda 3</h5>
+                                <p class="card-text">S/ 29.99</p>
+                                <p class="card-text">4.8 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Falda 3" data-price="29.99" data-image="/image/falda-3.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/falda-4.webp" class="card-img-top producto-img" alt="Falda 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Falda 4</h5>
+                                <p class="card-text">S/ 32.99</p>
+                                <p class="card-text">4.7 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Falda 4" data-price="32.99" data-image="/image/falda-4.webp">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="sacos" role="tabpanel" aria-labelledby="sacos-tab">
+                <!-- Productos de sacos -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/saco-1.webp" class="card-img-top producto-img" alt="Saco 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Saco 1</h5>
+                                <p class="card-text">S/ 59.99</p>
+                                <p class="card-text">4.9 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Saco 1" data-price="59.99" data-image="/image/saco-1.webp">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repetir para más productos -->
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/saco-2.jpg" class="card-img-top producto-img" alt="Saco 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Saco 2</h5>
+                                <p class="card-text">S/ 64.99</p>
+                                <p class="card-text">4.8 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Saco 2" data-price="64.99" data-image="/image/saco-2.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/saco-3.webp" class="card-img-top producto-img" alt="Saco 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Saco 3</h5>
+                                <p class="card-text">S/ 69.99</p>
+                                <p class="card-text">4.9 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Saco 3" data-price="69.99" data-image="/image/saco-3.webp">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="image/saco-4.webp" class="card-img-top producto-img" alt="Saco 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Saco 4</h5>
+                                <p class="card-text">S/ 72.99</p>
+                                <p class="card-text">5.0 <i class="fas fa-star text-warning"></i></p>
+                                <button class="btn btn-morado btn-add-cart" data-product="Saco 4" data-price="72.99" data-image="/image/saco-4.webp">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carrito mt-5">
+            <h4>Carrito de Compras</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="carrito-body">
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-primary" id="comprar-btn">Comprar</button>
+                <button class="btn btn-secondary" id="boleta-btn">Boleta</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4" style="background-color: black; color: white;">
+        <img src="image/logo.png" alt="Moda" style="height: 5rem; width: 5rem;" class="img-fluid rounded img-hover">
+        <div class="container" style="margin-top: 1rem;">
+            <div class="row mb-3">
+                <div class="col">
+                    <a href="#" class="mr-3"><i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i></a>
+                    <a href="#" class="mr-3"><i class="fab fa-whatsapp fa-2x" style="color: #25D366;"></i></a>
+                    <a href="#" class="mr-3"><i class="fab fa-instagram fa-2x" style="color: #e4405f;"></i></a>
+                    <a href="#" class="mr-3"><i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2025 Ropa con estilo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Formulario Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalLabel">Información de Pago</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" class="form-control" id="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" class="form-control" id="direccion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pago">Opción de Pago:</label>
+                            <select class="form-control" id="pago" required>
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Yape">Yape</option>
+                                <option value="Tarjeta">Tarjeta</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="js/store.js"></script>
+</body>
+</html>
